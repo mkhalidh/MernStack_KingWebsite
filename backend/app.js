@@ -16,6 +16,13 @@ app.use(cors({
 // Headers.use('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE')
 // Headers.use('Access-Control-Allow-Headers: Content-Type, X-Auth-Token, Origin, Authorization')
 
+app.get('/',(req,res)=>{
+    res.json({
+        success: true,
+        message:"Website Live!  "
+    })
+})
+
 app.use(express.json());
 // checking data type
 // name mei String 
